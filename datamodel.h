@@ -21,7 +21,7 @@ class Product{
        this->price = price;
    }
     string getDisplayName(){
-        return name + ": Rs" + to_string(price) + "\n";
+        return name + " : Rs" + to_string(price) + "\n";
     }
     string getShortName(){
         return name.substr(0,1);
@@ -81,7 +81,7 @@ class Cart{
            auto item = itemPair.second;
            itemizedList.append(item.getItemInfo());
        }
-       return itemizedList + "\n Total Amount : Rs. " + to_string(cart_total) + '\n';
+       return itemizedList + "\n Total Amount : Rs. " + to_string(cart_total) + "\n";
    }
    bool isEmpty(){
        return items.empty();
