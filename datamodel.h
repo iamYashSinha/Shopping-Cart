@@ -44,7 +44,7 @@ class Item{
         return quantity * product.price;
     }
     string getItemInfo(){
-        return to_string(quantity) + " x " + product.name + " Rs."+ to_string(quantity * product.price);
+     return to_string(quantity) + " x " + product.name + " Rs."+ to_string(quantity * product.price) + "\n";
     }
     friend class Cart;
 };
